@@ -1,3 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بوابة الطالب</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Cairo,Tahoma,sans-serif;
+}
+
+body{
+background:#eef2f5;
+direction:rtl; right 
+overflow-x:auto;
+min-width:1100px;
+}
+
+.header{
+background:#1565c0;
+color:#fff;
+padding:15px;
+text-align:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.container{
+display:flex;
+flex-direction: row;
+justify-content:space-between;
+align-items:flex-start;
+padding:15px;
+gap:20px;
+}
+
+.sidebar{
+width:220px;
+background:#dde5ea;
+border-radius:12px;
+padding:15px;
+order:2;
+}
+
+.content{
+flex:1;
+order:1;
+}
+
+.profile{
+background:#fff;
+border-radius:12px;
+padding:15px;
+text-align:center;
+margin-bottom:15px;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+}
+
+.profile img{
+width:90px;
+height:90px;
+border-radius:50%;
+border:4px solid #2196f3;
+object-fit:cover;
+}
+
+.profile h2{
+font-size:18px;
+margin-top:10px;
+}
+
+.profile p{
+font-size:13px;
+color:#666;
+margin-top:5px;
+}
+
+.menu{
+list-style:none;
+}
+
+.menu li{
+background:#fff;
+margin-bottom:8px;
+padding:10px;
+border-radius:8px;
+font-size:14px;
+cursor:pointer;
+transition:.3s;
+}
+
+.menu li:hover,
+.menu .active{
+background:#1976d2;
+color:#fff;
+}
+
+.content{
+flex:1;
+order:2;
+}
+
+.card{
+background:#fff;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 2px 8px rgba(0,0,0,.15);
+margin-bottom:20px;
+}
+
+.card h3{
+background:#1976d2;
+color:#fff;
+padding:12px;
+font-size:18px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+td{
+padding:12px;
+border-bottom:1px solid #eee;
+font-size:14px;
+text-align:center;
+}
+
+td:first-child{
+font-weight:bold;
+color:#1565c0;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="header">
+جامعة المنيا
+</div>
+
+<div class="container">
+
+<div class="sidebar">
+
+<div class="profile">
+
+<img src="file_00000000fe5072439b08f7466558808c~2.jpg" alt="صورة الطالب">
+
+<h2>جوليانا سامح عطيه</h2>
+
+<p>البرنامج: المتميز</p>
+
+<p>الكود: 83436743</p>
+
+</div>
+
+<ul class="menu">
+
+<li class="active" onclick="showPersonal()">👤 البيانات الأساسية</li>
+<li>📋 التسجيل الأكاديمي</li>
+<li>📅 الجدول الدراسي</li>
+<li>💰 المصاريف الدراسية</li>
+<li>📄 تقرير الغياب</li>
+<li>📝 جدول الامتحانات</li>
+<li onclick="showGrades()">📊 تقديرات المقررات</li>
+<li>🎯 رغبات الالتحاق</li>
+<li>📑 نتيجة المقررات</li>
+<li>🔴 الإنذارات الأكاديمية</li>
+
+</ul>
+
+</div>
+
+<div class="content">
+
+<div class="card" id="personalData">
+
+<h3>البيانات الشخصية</h3>
+
+<table>
+
+<tr><td>الاسم</td><td>جوليانا سامح عطيه</td></tr>
+<tr><td>الكود</td><td>83436743</td></tr>
+<tr><td>الرقم القومي</td><td>30501072600545</td></tr>
+<tr><td>تاريخ الميلاد</td><td>7/1/2005/td></tr>
+<tr><td>النوع</td><td>انثي</td></tr>
+<tr><td>الديانة</td><td>مسيحي</td></tr>
+<tr><td>الجنسية</td><td>مصري</td></tr>
+<tr><td>الكلية</td><td>طب الأسنان</td></tr>
+<tr><td>القسم</td><td>المتميز</td></tr>
+<tr><td>الفرقة</td><td>الثانية</td></tr>
+<tr><td>الفصل الدراسي</td><td>الثاني</td></tr>
+<tr><td>العام الجامعي</td><td>2025 / 2026</td></tr>
+
+</table>
+
+</div>
 <!-- الجدول الأول: الموازنة 2024-2025 -->
 <div class="result-table">
     <h3>الموازنة 2024-2025</h3>
@@ -15,13 +224,13 @@
             <tr><td>CHMD</td><td>كيمياء</td><td>6</td><td>NP</td></tr>
             <tr><td>GANM-101</td><td>التشريح عام I</td><td>4</td><td>F</td></tr>
             <tr><td>GEND</td><td>علم الوراثة</td><td>2</td><td>NP</td></tr>
-            <tr><td>GHSM-101</td><td>استولوجيا عامة I</td><td>3</td><td>F</td></tr>
+            <tr><td>GHSM-101</td><td>هستولوجيا عامة I</td><td>3</td><td>F</td></tr>
             <tr><td>GPHM-101</td><td>فسيولوجيا عامة I</td><td>4</td><td>F</td></tr>
             <tr><td>OBID-101</td><td>التشريح وصفي</td><td>6</td><td>F</td></tr>
             <tr><td>UN01</td><td>اللغة الإنجليزية</td><td>2</td><td>NP</td></tr>
             <tr><td>CBID-102</td><td>بيولوجيا الخلية</td><td>3</td><td>NP</td></tr>
             <tr><td>GANM-102</td><td>التشريح عام II</td><td>4</td><td>F</td></tr>
-            <tr><td>GHSM-102</td><td>استولوجيا عامة II</td><td>3</td><td>F</td></tr>
+            <tr><td>GHSM-102</td><td>هستولوجيا عامة II</td><td>3</td><td>F</td></tr>
             <tr><td>GPHM-102</td><td>فسيولوجيا عامة II</td><td>4</td><td>F</td></tr>
             <tr><td>PHYD-102</td><td>فيزياء</td><td>3</td><td>P</td></tr>
         </tbody>
@@ -29,7 +238,7 @@
 
     <p>
         الساعات المسجلة: 44 |
-        الساعات الحاصل عليها: 0 |
+     الساعات الحاصل عليها: 3 |
         المعدل الفصلي: 0 |
         المعدل التراكمي: 0
     </p>
@@ -51,7 +260,7 @@
         </thead>
         <tbody>
             <tr><td>GANM-101</td><td>التشريح عام</td><td>4</td><td>C</td></tr>
-            <tr><td>GHSM-101</td><td>استولوجيا عامة</td><td>3</td><td>Fr</td></tr>
+            <tr><td>GHSM-101</td><td>هستولوجيا عامة</td><td>3</td><td>Fr</td></tr>
             <tr><td>OBID-101</td><td>التشريح وصفي</td><td>6</td><td>D+</td></tr>
             <tr><td>GPHM-101</td><td>فسيولوجيا عامة</td><td>4</td><td>F</td></tr>
             <tr><td>CHMD</td><td>كيمياء</td><td>6</td><td>P</td></tr>
