@@ -310,3 +310,295 @@ color:#1565c0;
         المعدل التراكمي: 1.17
     </p>
 </div>
+
+<style>
+.grades-page {
+    direction: rtl;
+    width: 100%;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    color: #52616b;
+    font-size: 11px;
+    box-sizing: border-box;
+}
+
+.grades-page * {
+    box-sizing: border-box;
+}
+
+.grade-semester {
+    margin-bottom: 19px;
+    width: 100%;
+}
+
+.semester-title {
+    display: table;
+    margin: 0 0 7px auto;
+    padding: 5px 12px;
+    background: #e8f1f7;
+    color: #5685a4;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.grade-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    text-align: center;
+}
+
+.grade-table th {
+    background: #e8f0f5;
+    color: #6489a3;
+    font-weight: bold;
+    padding: 8px 4px;
+    border: 1px solid #e1e8ed;
+    font-size: 10px;
+}
+
+.grade-table td {
+    padding: 7px 4px;
+    border: 1px solid #edf0f2;
+    font-size: 10px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+.grade-table th:first-child {
+    width: 20%;
+}
+
+.grade-table th:nth-child(2) {
+    width: 50%;
+}
+
+.grade-table th:nth-child(3) {
+    width: 15%;
+}
+
+.grade-table th:nth-child(4) {
+    width: 15%;
+}
+
+.grade-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 7px;
+    background: #f4f6f8;
+    border-right: 3px solid #6b9cba;
+    border-radius: 4px;
+    margin-top: 7px;
+    padding: 9px 8px;
+    font-size: 10px;
+}
+
+.grade-summary span {
+    white-space: nowrap;
+}
+
+.grade-summary b {
+    color: #5285a7;
+}
+
+@media (max-width: 600px) {
+    .grades-page {
+        font-size: 9px;
+    }
+
+    .grade-table th,
+    .grade-table td {
+        padding: 6px 2px;
+        font-size: 9px;
+    }
+
+    .grade-summary {
+        gap: 6px;
+        padding: 8px 5px;
+        font-size: 9px;
+    }
+}
+</style>
+
+<div class="grades-page">
+
+    <!-- الفصل الأول 2024-2025 -->
+    <section class="grade-semester">
+        <div class="semester-title">الأول (2024-2025)</div>
+
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>اسم المقرر</th>
+                    <th>الساعات المعتمدة</th>
+                    <th>التقدير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>بايو</td>
+                    <td>4</td>
+                    <td>D+</td>
+                </tr>
+                <tr>
+                    <td>أساسيات المواد الحيوية لطب الأسنان</td>
+                    <td>4</td>
+                    <td>D+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grade-summary">
+            <span>الساعات المسجلة: <b>8</b></span>
+            <span>الساعات الحاصل عليها: <b>8</b></span>
+            <span>المعدل الفصلي: <b>1.0</b></span>
+            <span>المعدل التراكمي: <b>0.97</b></span>
+        </div>
+    </section>
+
+    <!-- الفصل الأول 2025-2026 -->
+    <section class="grade-semester">
+        <div class="semester-title">الأول (2025-2026)</div>
+
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>اسم المقرر</th>
+                    <th>الساعات المعتمدة</th>
+                    <th>التقدير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>التشريح عام</td>
+                    <td>4</td>
+                    <td>D+</td>
+                </tr>
+                <tr>
+                    <td>الفسيولوجيا عامة</td>
+                    <td>4</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>ميكروبيولوجي</td>
+                    <td>3</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>فارماكولوجي</td>
+                    <td>4</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>تكنولوجيا صناعة الأسنان</td>
+                    <td>5</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>وسائل الاتصال</td>
+                    <td>2</td>
+                    <td>P</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grade-summary">
+            <span>الساعات المسجلة: <b>22</b></span>
+            <span>الساعات الحاصل عليها: <b>17</b></span>
+            <span>المعدل الفصلي: <b>2.01</b></span>
+            <span>المعدل التراكمي: <b>0.86</b></span>
+        </div>
+    </section>
+
+    <!-- الفصل الثاني 2025-2026 -->
+    <section class="grade-semester">
+        <div class="semester-title">الثاني (2025-2026)</div>
+
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>اسم المقرر</th>
+                    <th>الساعات المعتمدة</th>
+                    <th>التقدير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>علم المناعة</td>
+                    <td>2</td>
+                    <td>P</td>
+                </tr>
+                <tr>
+                    <td>هستولوجيا عامة</td>
+                    <td>3</td>
+                    <td>D+</td>
+                </tr>
+                <tr>
+                    <td>الفسيولوجيا عامة</td>
+                    <td>4</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>بيولوجيا الفم والأسنان</td>
+                    <td>4</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>أساسيات المواد الحيوية لطب الأسنان</td>
+                    <td>4</td>
+                    <td>Fr</td>
+                </tr>
+                <tr>
+                    <td>فارماكولوجي</td>
+                    <td>4</td>
+                    <td>D+</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grade-summary">
+            <span>الساعات المسجلة: <b>21</b></span>
+            <span>الساعات الحاصل عليها: <b>9</b></span>
+            <span>المعدل الفصلي: <b>0.82</b></span>
+            <span>المعدل التراكمي: <b>0.93</b></span>
+        </div>
+    </section>
+
+    <!-- الفصل الصيفي 2025-2026 -->
+    <section class="grade-semester">
+        <div class="semester-title">الصيفي (2025-2026)</div>
+
+        <table class="grade-table">
+            <thead>
+                <tr>
+                    <th>اسم المقرر</th>
+                    <th>الساعات المعتمدة</th>
+                    <th>التقدير</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>الفسيولوجيا عامة</td>
+                    <td>4</td>
+                    <td>D+</td>
+                </tr>
+                <tr>
+                    <td>أساسيات حيوية </td>
+                    <td>4</td>
+                    <td>F</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="grade-summary">
+            <span>الساعات المسجلة: <b>8</b></span>
+            <span>الساعات الحاصل عليها: <b>8</b></span>
+            <span>المعدل الفصلي: <b>1.01</b></span>
+            <span>المعدل التراكمي: <b>1.1</b></span>
+        </div>
+    </section>
+
+</div>
